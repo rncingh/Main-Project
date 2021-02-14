@@ -1,0 +1,26 @@
+.app-navbar {
+    background-color: #3f51b5;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    height: 64px;
+}
+
+.app-brand {
+    color: white;
+}
+
+.s-nav-link {
+    color: #fff;
+}
+.main-container {
+   
+} 
+
+.sidebar {
+    width: 250px;
+    background-color: #ebebeb;
+    height: calc(100vh - 64px);
+}
+
+.content {
+    padding:10px 10px 0px 10px;
+}
