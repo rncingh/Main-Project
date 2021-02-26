@@ -1,1 +1,51 @@
-<p>student works!</p>
+<!-- <div class="container">
+    <div class="card">
+        <div>
+            First Name:<br><input type="text">
+        </div>
+        <div>
+            Last Name:<br><input type="text">
+        </div>
+        <div>
+            Parent Name:<br><input type="text">
+        </div>
+        <div>
+            class:      <br><input type="text">
+        </div>
+        <div>
+            Phone number:<br><input type="number">
+        </div>
+    </div>
+</div> -->
+
+<table class="table table-hover table-dark">
+  
+    <tbody>
+      <tr routerLink="course">
+        <td class="xy">StudentsID</td>
+      </tr>
+      <tr routerLink="table">
+        <td>Add Students</td>
+      </tr>
+    </tbody>
+    <router-outlet></router-outlet>
+  </table>
+
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text"
+             placeholder="Datepicker"
+             class="form-control"
+             bsDatepicker>
+    </div>
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text"
+             placeholder="Daterangepicker"
+             class="form-control"
+             bsDaterangepicker>
+    </div>
+  </div>
+  
+
+
+  

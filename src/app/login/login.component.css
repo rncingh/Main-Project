@@ -1,11 +1,12 @@
 .login-container {
-    background-color: rgb(241, 243, 241);
+    background-color: rgb(116, 226, 116);
     height: 100vh;
 }
 
 .login-form {
     width: 400px;
-    max-height: 250px;
+    max-height: 350px;
+    background-color: burlywood;
 }
 
 .u-img {
@@ -30,4 +31,7 @@
 .submit {
     margin-top: 10px;
     text-align: center;
+}
+.paragraph {
+    margin-bottom: -1px;
 }

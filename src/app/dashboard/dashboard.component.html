@@ -1,22 +1,66 @@
-<nav class="navbar navbar-expand-lg  app-navbar">
-    <!-- <button (click)="showSidebar()">Show hide</button> -->
-    <a class="navbar-brand app-brand" href="#">Navbar</a>
-    <ul class="navbar-nav flex-row ">
-
-        <li class="nav-item">
-          <a class="nav-link s-nav-link" routerLink="student">Students</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link s-nav-link" routerLink="course">Courses</a>
-        </li>
-      
-      </ul>
-  </nav>
-  <div class="main-container d-flex flex-row">
-      <!-- <div class="sidebar" *ngIf="show">
-        jnjnjn
-      </div> -->
-      <div class="content">
-          <router-outlet></router-outlet>
-      </div>
+<div class="d-flex flex-row app-nav">
+  <div class="u-img1 ">
+    <img (click)="close()" src="assets/images/img.jpeg" alt="" srcset="">
   </div>
+  <div class="text flex-grow-1 bd-highlight">
+    <div class="wel">
+      Welcome To Login World
+    </div>
+    <div class="fr">
+      From Developer
+    </div>
+  </div>
+  <div class="submit">
+    <button (click)="logout()" class="btn btn-danger">LogOut</button>
+  </div>
+</div>
+
+<div class="d-flex flex-row main-container">
+  <div class="sidebar" *ngIf="finish">
+    <button (click)="close()" class="close" style="font-size:3.5rem">&times;</button>
+    <div class="u-img2 ">
+      <img src="assets/images/img.jpeg" alt="" srcset="">
+    </div>
+    <div>Sushil Yadav</div>
+    <span> <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpja04tpAKGSCpMMurrGdCGt84-ve97wnqiw&usqp=CAU" alt="" srcset=""> BirGunj, Nepal</span>
+    <div>Sr. Software Developer at Wipro.co</div>
+    <div>About</div>
+    <div>Haldia</div>
+  </div>
+  <div class="content">
+    <div class="menuwrapper">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a style="color: black;" routerLink="student">StudentList</a></li>
+        <li><a style="color: black;" routerLink="table">Courses</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+
+    
+
+    <!-- <accordion>
+      <accordion-group heading="Student List">
+       djghdlgdjk
+      </accordion-group>
+      <accordion-group heading="Another group">
+        <p>Some content</p>
+      </accordion-group>
+      <accordion-group heading="Another group">
+        <p>Some content</p>
+      </accordion-group>
+      <accordion-group heading="Another group">
+        <p>Some content</p>
+      </accordion-group>
+    </accordion>
+    bjdhbj -->
+    <!-- <router-outlet></router-outlet> -->
+    <div *ngFor="let movie of movieList">{{movie.title}}</div>
+    <alert type="success">
+      <strong>Well done!</strong> You successfully Login.
+    </alert>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

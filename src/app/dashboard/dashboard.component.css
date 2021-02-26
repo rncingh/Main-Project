@@ -1,4 +1,4 @@
-.app-navbar {
+/* .app-navbar {
     background-color: #3f51b5;
     box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
     height: 64px;
@@ -23,4 +23,67 @@
 
 .content {
     padding:10px 10px 0px 10px;
+} */
+
+.app-nav {
+    background-color: #342D7E;
+    height: 85px;
 }
+
+.u-img1 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 55%;
+    /* margin-left: 100px; */
+    
+} 
+.submit {
+    margin-top: 22px;
+    margin-right: 5px;
+}
+.text {
+    margin-left: 34px;
+    margin-top: 17px;
+    color: black;
+    font-size: 19px;
+}
+.sidebar{
+    height: calc(100vh - 85px);
+    width: 18%;
+    background-color: #3090C7;
+}
+.u-img2 {
+    padding: 20px 35px 20px 35px;
+    height: 35%;
+}
+.u-img2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+} 
+ .menuwrapper {
+     background-color: #6698FF;
+     height: 85px;
+     width: 100%;
+     margin-bottom: 15px;
+    margin-top: -16px;  
+ }
+ ul li {
+     list-style-type: none;
+     float: left;
+     padding: 35px;
+     font-size: 20px;
+ }
+ .img1 {
+     size: 5px;
+ }
+ .content {
+     width: 100%;
+     /* line-height: 0%; */
+     margin: 0px;
+ }
+ 
+
+
+ 
+

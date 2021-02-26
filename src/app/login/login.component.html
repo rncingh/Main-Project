@@ -1,4 +1,4 @@
-<div class="login-container d-flex justify-content-center align-items-center">
+<div class="login-container d-flex justify-content-center align-items-center d-flex flex-wrap">
 	<div class="card login-form">
 		<div class="card-body">
 			<div class="d-flex flex-column">
@@ -7,15 +7,36 @@
 					
 				</div>
 				<div class="username">
+					<!-- <i class="ri-home-line"></i> -->
 					<input type="text" class="form-control" placeholder="Username" [(ngModel)]="username">
 				</div>
 				<div class="password">
 					<input type="text" class="form-control" placeholder="Password" [(ngModel)]="password">
 				</div>
-				<div class="submit">
+				<div class="submit">	
 					<button class="btn btn-success" (click)="login()">Login</button>
+				</div>
+				<div class="submit">
+					<p class="paragraph">Dont have an account yet?</p>	
+					<button class="btn btn-success">Sign Up</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="btn-group" dropdown>
+	<button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+			aria-controls="dropdown-basic">
+	  Icon <span class="caret"></span>
+	</button>
+	<ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+		role="menu" aria-labelledby="button-basic">
+	  <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+	  <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+	  <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+	  <!-- <li class="divider dropdown-divider"></li> -->
+	  <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+	  </li>
+	</ul>
+  </div>

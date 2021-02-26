@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     this.password = "";
     this.loginDetail = {
       username:"admin",
-      password:"admin"
+      password:"admin1"
     }
 
   }
@@ -27,7 +27,10 @@ export class LoginComponent implements OnInit {
 
     if(this.username !== "" || this.password !== "") {
       if(this.username === this.loginDetail.username && this.password === this.loginDetail.password) {
-        this.router.navigate(["/app"]); 
+        const token = "d46ye3453f5g34"
+        localStorage.setItem("access_token", token);
+        this.router.navigate(["/app"]);
+
       } else {
         alert("Wrong username or password!");
       }
